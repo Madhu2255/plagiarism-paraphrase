@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paraphrase Tool</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <style>
+      /* Style for the main header */
+      .header {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      /* Style for the input form */
+      form {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        font-weight: bold;
+        color: #444;
+      }
+      textarea {
+        resize: none;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: #444;
+      }
+      input[type=submit] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: #0069d9;
+      }
+    </style>
+  </head>
+  <body style="background-color: powderblue;">
+    <header class="header">
+      <h1>PARAPHRASE</h1>
+    </header>
+    <div class="container">
+      <form method="POST" action="/paraphrase">
+        <div class="form-group">
+          <label for="context">Enter a paragraph of text:</label>
+          <textarea class="form-control" id="context" name="context" rows="10" placeholder="Type or paste your text here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Paraphrase</button>
+      </form>
+    </div>
+    <!-- Link to Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
